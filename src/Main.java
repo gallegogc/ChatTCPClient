@@ -76,7 +76,7 @@ public class Main {
 
 	// PEDIMOS EL MENSAJE AL USUARIO Y LO ENVIAMOS
 	private static void enviarMensaje() throws IOException {
-		String msg = name + ": " + pedirString(">> Introduzca el mensaje a enviar: ", "[A-za-z]{1,99}");
+		String msg = name + ": " + pedirString(">> Introduzca el mensaje a enviar: ", "[A-za-z\s]{1,99}");
 		OS.write(msg.getBytes());
 		System.out.println(">> Mensaje enviado");
 	}

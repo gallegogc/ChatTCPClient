@@ -6,7 +6,7 @@ public class Listener extends Thread {
 	InputStream IS;
 	String name;
 
-	public Listener(InputStream IS, String nombre) {
+	public Listener(InputStream IS, String name) {
 		this.IS = IS;
 		this.name = name;
 	}
